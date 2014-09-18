@@ -13,13 +13,18 @@ module MetaInstance
   # backs up and overrides a method.
   # but don't override if we already have overridden this method
   def instance_override(name, &block)
-    unless self.respond_to?("#{METHOD_BACKUP_KEY}#{name}")
+    unless respond_to?("#{METHOD_BACKUP_KEY}#{name}")
       backup_instance_method(name)
     end
     instance_define(name, &block)
   end
 
-  # Adds methods to a metaclass
+  # Adds methods to a singletonclass
+  # define_singleton_method(name, &block) is the same as doing
+  #
+  # meta_eval {
+  #   define_method(name, &block)
+  # }
   def instance_define(name, &block)
     define_singleton_method(name, &block)
   end
@@ -43,15 +48,13 @@ module MetaInstance
 
   private
 
-  # The hidden singleton lurks behind everyone
-  def metaclass
-    class << self
-      self
-    end
-  end
-
+  # evals a block inside of a singleton class, aka
+  #
+  # class << self
+  #   self
+  # end
   def meta_eval(&block)
-    metaclass.instance_eval(&block)
+    singleton_class.instance_eval(&block)
   end
 
 end
