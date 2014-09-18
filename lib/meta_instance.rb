@@ -35,10 +35,12 @@ module MetaInstance
 
   # the original method becomes reaccessible
   def restore_instance_method(name)
-    meta_eval {
-      alias_method name, "#{METHOD_BACKUP_KEY}#{name}"
-      remove_method "#{METHOD_BACKUP_KEY}#{name}"
-    }
+    if respond_to?("#{METHOD_BACKUP_KEY}#{name}")
+      meta_eval {
+        alias_method name, "#{METHOD_BACKUP_KEY}#{name}"
+        remove_method "#{METHOD_BACKUP_KEY}#{name}"
+      }
+    end
   end
 
   private

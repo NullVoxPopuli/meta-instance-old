@@ -67,6 +67,11 @@ describe MetaInstance do
     it "doesn't respond_to the backup method" do
       expect(f).to_not respond_to "#{MetaInstance::METHOD_BACKUP_KEY}bar"
     end
+
+    it "doesn't remove a method that isn't there" do
+      expect(f).to_not respond_to(:foobar)
+      expect(f.restore_instance_method(:foobar)).to be_nil
+    end
   end
 
   context "instance_override" do
