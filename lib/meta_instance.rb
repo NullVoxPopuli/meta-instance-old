@@ -21,9 +21,7 @@ module MetaInstance
 
   # Adds methods to a metaclass
   def instance_define(name, &block)
-    meta_eval {
-      define_method(name, &block)
-    }
+    define_singleton_method(name, &block)
   end
 
   # backs up a method in case we want to restore it later
