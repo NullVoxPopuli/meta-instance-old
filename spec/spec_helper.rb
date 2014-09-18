@@ -6,6 +6,7 @@ require "pry-byebug" # binding.pry to debug!
 
 # Coverage
 require "codeclimate-test-reporter"
+ENV['CODECLIMATE_REPO_TOKEN'] = "53c2221e147d16cbe8a445915377ff528b291a9534f5cb72f6abf8df13bd06f4"
 CodeClimate::TestReporter.start
 
 # This Gem
