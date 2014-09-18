@@ -1,11 +1,11 @@
 MetaInstance
 ============
 
-[![Gem Version](https://badge.fury.io/rb/meta-instance.svg)](http://badge.fury.io/rb/meta_instance)
-[![Build Status](https://travis-ci.org/NullVoxPopuli/MetaInstance.svg)](https://travis-ci.org/NullVoxPopuli/MetaInstance)
-[![Code Climate](https://codeclimate.com/github/NullVoxPopuli/MetaInstance/badges/gpa.svg)](https://codeclimate.com/github/NullVoxPopuli/MetaInstance)
-[![Test Coverage](https://codeclimate.com/github/NullVoxPopuli/MetaInstance/badges/coverage.svg)](https://codeclimate.com/github/NullVoxPopuli/MetaInstance)
-[![Dependency Status](https://gemnasium.com/NullVoxPopuli/MetaInstance.svg)](https://gemnasium.com/NullVoxPopuli/MetaInstance)
+[![Gem Version](http://img.shields.io/gem/v/meta_instance.svg?style=flat-square)](http://badge.fury.io/rb/meta_instance)
+[![Build Status](http://img.shields.io/travis/NullVoxPopuli/MetaInstance.svg?style=flat-square)](https://travis-ci.org/NullVoxPopuli/MetaInstance)
+[![Code Climate](http://img.shields.io/codeclimate/github/NullVoxPopuli/MetaInstance.svg?style=flat-square)](https://codeclimate.com/github/NullVoxPopuli/MetaInstance)
+[![Test Coverage](http://img.shields.io/codeclimate/coverage/github/NullVoxPopuli/MetaInstance.svg?style=flat-square)](https://codeclimate.com/github/NullVoxPopuli/MetaInstance)
+[![Dependency Status](http://img.shields.io/gemnasium/NullVoxPopuli/MetaInstance.svg?style=flat-square)](https://gemnasium.com/NullVoxPopuli/MetaInstance)
 [![Security](https://hakiri.io/github/NullVoxPopuli/MetaInstance/master.svg)](https://hakiri.io/github/NullVoxPopuli/MetaInstance/master)
 
 A few helpers for manipulating methods on an instance of an object.
