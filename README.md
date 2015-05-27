@@ -1,6 +1,6 @@
 ## THIS GEM IS NO LONGER BEING MAINTAINED
 
-[Alternate version here](https://github.com/NullVoxPopuli/meta-instance) with cleaner api to meta-methods
+[Alternate version here (Under the same name)](https://github.com/NullVoxPopuli/meta-instance) with cleaner api to meta-methods
 
 MetaInstance
 ============
